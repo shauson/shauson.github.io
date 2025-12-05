@@ -92,7 +92,6 @@ document.addEventListener('DOMContentLoaded', function() {
     } else if (node.nodeType === Node.ELEMENT_NODE && node.tagName !== 'CODE' && node.tagName !== 'PRE' && node.tagName !== 'IMG' && node.tagName !== 'TABLE') {
       Array.from(node.childNodes).forEach(wrapLatin);
     }
-  }
 
   wrapLatin(article);
 });
