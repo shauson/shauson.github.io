@@ -87,7 +87,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 }
 
 </style>
-<style>#vertwrap{position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:9999;overflow:hidden;}#vertwrap iframe{border:none;width:100vw;height:100vh;}</style>
+<style>iframe#vertiframe{border:none;transform:rotate(90deg);transform-origin:top left;width:calc(100vh);height:calc(100vw);position:absolute;top:0;left:calc(100vw);}</style>
 
 
 
@@ -1979,6 +1979,6 @@ function iFrameLoading(){
 
 
 </script>
-<script>(function(){document.addEventListener('DOMContentLoaded',function(){var wrap=document.createElement('div');wrap.id='vertwrap';var ifr=document.createElement('iframe');ifr.src=location.href;wrap.appendChild(ifr);document.body.appendChild(wrap);wrap.style.display='block';ifr.onload=function(){var s=document.createElement('style');s.textContent=`@font-face{font-family:'WQYRotateCJK';src:url('https://raw.githubusercontent.com/garywill/vert-cjk-web/master/wqy-microhei-rotate90cjk.ttf') format('truetype');}body,body *{font-family:'WQYRotateCJK','SimSun',serif !important;writing-mode:vertical-rl !important;text-orientation:upright !important;user-select:text !important;}pre,code,table,img{writing-mode:horizontal-tb !important;}`;ifr.contentDocument.head.appendChild(s);var links=ifr.contentDocument.querySelectorAll('a');links.forEach(a=>a.setAttribute('target','_top'));};});})();</script>
+<script>(function(){document.addEventListener('DOMContentLoaded',function(){var ifr=document.createElement('iframe');ifr.id='vertiframe';ifr.src=location.href;document.body.appendChild(ifr);ifr.onload=function(){var s=document.createElement('style');s.textContent="@font-face{font-family:'WQYRotateCJK';src:url('https://raw.githubusercontent.com/garywill/vert-cjk-web/master/wqy-microhei-rotate90cjk.ttf') format('truetype');}body,body *{font-family:'WQYRotateCJK','SimSun',serif !important;user-select:text !important;}pre,code,table,img{font-family:inherit !important;writing-mode:horizontal-tb !important;}";ifr.contentDocument.head.appendChild(s);var links=ifr.contentDocument.querySelectorAll('a');links.forEach(a=>a.setAttribute('target','_top'));};document.addEventListener('wheel',e=>{e.preventDefault();ifr.contentWindow.scrollBy(e.deltaY,0);},{passive:false});let startY;document.addEventListener('touchstart',e=>{startY=e.touches[0].clientY;},{passive:false});document.addEventListener('touchmove',e=>{e.preventDefault();let deltaY=startY-e.touches[0].clientY;ifr.contentWindow.scrollBy(deltaY,0);startY=e.touches[0].clientY;},{passive:false});});})();</script>
 
 </html>
