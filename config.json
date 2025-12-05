@@ -2,6 +2,7 @@
     "title":"Blog Title",
     "subTitle":"Blog description",
     "avatarUrl":"https://github.githubassets.com/favicons/favicon.svg",
+    "GMEEK_VERSION":"last",
   "style": "<style>
 /* === Gmeek 全站竖排样式 === */
 .markdown-body {
@@ -92,11 +93,12 @@ document.addEventListener('DOMContentLoaded', function() {
     } else if (node.nodeType === Node.ELEMENT_NODE && node.tagName !== 'CODE' && node.tagName !== 'PRE' && node.tagName !== 'IMG' && node.tagName !== 'TABLE') {
       Array.from(node.childNodes).forEach(wrapLatin);
     }
+  }
 
   wrapLatin(article);
 });
-</script>",
-    "GMEEK_VERSION":"last"
+</script>"
+
 }
 
 
