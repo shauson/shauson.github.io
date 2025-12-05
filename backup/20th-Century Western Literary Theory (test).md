@@ -1,25 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>陶達若之部録</title><link>https://shauson.github.io</link><description>本BLOG縱読也。複写内容者、点右下之「縱・横」一回。</description><copyright>陶達若之部録</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://shauson.github.io</link></image><lastBuildDate>Fri, 05 Dec 2025 17:31:41 +0000</lastBuildDate><managingEditor>陶達若之部録</managingEditor><ttl>60</ttl><webMaster>陶達若之部録</webMaster><item><title>形式逻辑</title><link>https://shauson.github.io/post/xing-shi-luo-ji.html</link><description>---
-&gt; 逻辑学  
-&gt; 形式逻辑  
-&gt;&gt; 传统形式逻辑  
-&gt;&gt;&gt; 演绎  
-&gt;&gt;&gt; 归纳  
-&gt;&gt; 现代形式逻辑  
-&gt;&gt;&gt; 数理逻辑  
-&gt;&gt;&gt; 人工逻辑  
-&gt; 辩证逻辑  
-  
-# 逻辑学的研究对象＝理性思维  
-形式逻辑的研究对象＝思维形式及其规律，同时也涉及一些简单的逻辑方法  
-## 思维形式：思维内容的组成和表达方式（＝概念、判断、推理）  
-### 思维形式类型  
-1. 所有的S是P（性质判断）＝所有的日本国民都是日本义务教育的对象  
-2. aRb（关系判断）＝芥川龙之介来过中国  
-3. 如果p，那么q（复合判断＝假言判断＋连言判断＋选言判断）  
-### 思维形式的构成：逻辑常项、逻辑变项  
-1. 逻辑常项＝“所有的，是”“R”“如果，那么”  
-    R的处理：在性质判断中，”S“是主项，P是”谓项“，因此常项很好处理。</description><guid isPermaLink="true">https://shauson.github.io/post/xing-shi-luo-ji.html</guid><pubDate>Fri, 05 Dec 2025 08:56:36 +0000</pubDate></item><item><title>20th-Century Western Literary Theory (test)</title><link>https://shauson.github.io/post/20th-Century%20Western%20Literary%20Theory%20%28test%29.html</link><description>前：模仿说和投影说
+前：模仿说和投影说
 浪漫主义和现实主义
 * 理论=做手术用的手术刀，观察用的显微镜→不要为理论而理论，你的目的应当为做手术/吃牛排
 	* 不同的理论如同医学检查中不同的检查机器，不同的工具会让你看到对象的不同侧面
@@ -58,7 +37,7 @@ Device=让文学作品具有艺术性的技巧（例：诗歌中的重复、对�
 对时间的打乱、闪回=plot（sjuzhet）↔︎story（fabula）=对事件的自然持续实现
 #### 「Theory of Prose」（Shklovsky，1929）
 英语中的Prose=小说的一种叙事！=中文“散文”
-&gt; They constitute the invariants of narrative, or its universal grammar, independent of any specific content, and provide a set of moulds
+> They constitute the invariants of narrative, or its universal grammar, independent of any specific content, and provide a set of moulds
 
 ### 第二阶段：Organic formalism
 基于有机论=如同一个有机体，作品也是由各部分协同组成，而且各部分都是有层级的
@@ -73,16 +52,16 @@ Yuri Tynianov（+黑格尔辩证法/索绪尔语言学）
 认为外在于文学系统的元素促进了文学的演变
 #### 「Problems in the Study of Language and Literature」(1928)
 研究系统中各个部件的function
-&gt; each synchronic system has its own past and future as part of its structure
-&gt; system means hierarchical organization!=a mere agglomerate of contemporaneous phenomena catalogued 
-&gt; 还要研究 the relevant non-literary facts 来明细system of systems
+> each synchronic system has its own past and future as part of its structure
+> system means hierarchical organization!=a mere agglomerate of contemporaneous phenomena catalogued 
+> 还要研究 the relevant non-literary facts 来明细system of systems
 ## 总结
 形式主义催生了结构主义，影响了人类学（Claude Levi-Strauss，Roland Bathes)、心理学
 形式主义-paradigm shift-结构主义，The answers you get depends on your paradigm（Thomas Kuhn）
 形式主义抛弃了模仿论、抛弃了先验论，形式主义的变革是一个巨大的范式转变
 ## 附：Saussure——the founder of modern linguistics and structuralism
 language（langue）——individuals（parole）
-**synchronic &amp; diachronic**
+**synchronic & diachronic**
 「普通语言学教程」
 language=socially shared，psychologically real system of signs
 each language consist of the arbitrary（恣意＝任意で専制的） conjunction of an abstract concept and acoustic image
@@ -137,7 +116,7 @@ the psyche=id / ego / superego (unscientific↔︎psychology)
 			* the process of displacement=takes place when we transform the person or object we are really concerned about to someone else
 * oceanic feeling(1927)
 	* oceanic feeling=refer to the sensation of being one with the universe(Rolland's letter)
-	* (Freud)it's the preserved 'primitive ego-feeling' from infancy
+	* (Freud)it's the preserved "primitive ego-feeling" from infancy
 		* the ego←母亲停止母乳喂养
 		* civilization↔︎individual(杀戮与性(**libido** = pleasure principle))
 			* religion
@@ -214,4 +193,94 @@ Mary Wollstonecraft *A Vindication of the Right of Woman*(1792)
 Jane Austen/Charlotte Bronte/Anne Bronte/Elizabeth Gaskell/George Eliot/Louisa May Alcott
 *the Spoils of Poynton* Henry James 
 1925 英国国会才立法女性可以自己处置自己的财产
-*the Second Sex*（1949）自然科学、社会科学、欧洲的文学、社会、政治、宗教创造了一个世界。</description><guid isPermaLink="true">https://shauson.github.io/post/20th-Century%20Western%20Literary%20Theory%20%28test%29.html</guid><pubDate>Fri, 05 Dec 2025 08:52:54 +0000</pubDate></item></channel></rss>
+*the Second Sex*（1949）自然科学、社会科学、欧洲的文学、社会、政治、宗教创造了一个世界。这个世界中，一种impossible且conflating的女性性观念产生一一种女性“natural” inferior的意识形态，来维护父权制的统治。
+* one is not born but becomes a woman（women are the weaker sex）
+* other（Hegel）in master-slave dialectic
+	* Subject=absolute/other=inessential
+	* →mutual recognition of each other be free and independent
+*The Feminine Mystique* by Betty Friedan 1963
+* demystified the dominant image of the happy American suburban housewife and mother
+* essential workforce(during WWII)→home bound housewife(after the War) 
+*Sexual Politics* by Kate Millett 1970→power-structured relationships
+*The Dialectic of Sex* by Shulamith Firestone
+*The Female Eunuch* by Germaine Greer
+
+## Virginia Woolf（-1941）
+出身富裕，后家庭圆满
+两次世界大战，给他带来了巨大的精神伤害
+意识流←陀思妥耶夫斯基、梭罗
+波伏娃：woolf等人approch nature in inhuman freedom
+女性想要写作：
+* 钱、房间、闲、
+*Mrs Dalloway*：长篇幅写一天的事情
+*Orlando：A Biography*（1928）
+**Judith Butler**的queer理论→解读Orlando
+* *Gender Trouble：Feminism*
+* *Subversion of Identity（1990）*
+* *Limits of Sex（1993）*
+* Gender Performative（性别表演理论）
+
+# Postcolonialism
+colonized people and land=the Other（←women/hegel）
+## Edward Said
+(→Homi Bhabha/Spivak)
+### Orientalism
+*The heart of darkness* 受限于帝国主义的意识形态框架/文化框架（文明-野蛮，强化了欧洲中心/西方中心主义的世界观）
+非洲人没有自己的表达，是沉默寡言的，被凝视的他者
+这是批判中的共谋，一方面是帝国主义的揭露，一方面是帝国主义话语的产物
+权力是与话语联系在一起的
+# Cultural Studies
+(from economics, poetics, media communication studies, sociology, literature, education and law...: agenda mode of analysis)
+50s started from Birmingham school and Frankfurter School
+→法国/非洲等各地的研究者
+什么是文化研究？→Toby Miller的Culture Studies/What it is？（和意识形态有关的）和What it isn't？（自然科学的，诗歌文本细读，艺术史（传统精英研究的内容））
+
+## Matthew Arnold
+先驱者
+*Culture and Anarchy* by Matthew Arnold
+推崇古典文化，culture = like spirit with poetry（创作），follows one law with poetry
+推广了Philistines这个词，认为要让富裕的中产阶级希腊化
+
+## Antonio Gramsci
+曾入过意大利共产党→Georg Lukacs（著作：“小说理论”）
+著作：The Prison Notebooks
+Cultural Hegemony：dominant ideology(beliefs, assumptions, and values)=dampen critical thought & barriers to revolution
+social institution socialize people consent to the rule of the dominant group
+x common sense
+
+## Frankfurter School
+书斋的马克思主义者，从革命转向社会文化
+Adorno *The Philosophy of Modern Music* (1949)
+Popular culture = made people docile and content, no matter how terrible their economic circumstances
+same thing / standardized production (the manipulation of taste an the official culture's pretense of individualism)
+purchase the illusion (pseudo-individualism and always-the-same)
+disenchantment(祛魅) / re-enchantment(赋魅)
+*The Aesthetic Dimension：Toward a Critique of Marxist Aesthetics* by Herbert Marcuse
+Benjamin： aura, the work of art in the age of technical reproducibility
+* 艺术只有被崇拜（cult）的价值和被展览（exhibition）的的价值
+
+## Birmingham School
+the centre for contemporary cultural school（CCCS）
+反对Eliot和Leavis（创立《细查派》）的精英主义立场
+*The empire strikes back*(逆写帝国)
+x high/low elite/popular + 媒介研究
+Stuart Hall，1973的Encode理论
+Raymond Williams：cultural materialism（三种文化 resident/dominant/～）
+
+迪士尼：女性形象演变史
+白雪公主=家中的天使
+↓
+冰雪奇缘/海洋奇缘/木兰=追求自我
+
+文化产品=中国的前现代田园生活的幻想
+* 场域
+	* 一个半人
+		* 主角
+		* 叙事者=脸和食物之外
+		* 偷窥的视角和风景
+		* 唯有一次出现了第三人，但也是长辈+失语的
+	* 中国的田园风景
+拟像
+
+为什么world literatue不属于文化研究的领域
+philistines
