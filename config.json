@@ -2,7 +2,7 @@
     "title":"Blog Title",
     "subTitle":"Blog description",
     "avatarUrl":"https://github.githubassets.com/favicons/favicon.svg",
-    "style": "<style>body { writing-mode: vertical-rl; text-orientation: upright; } .post-content { writing-mode: vertical-rl; text-orientation: upright; }</style>"
+    "style": "<style>body { writing-mode: vertical-rl; text-orientation: upright; } .post-content { writing-mode: vertical-rl; text-orientation: upright; }</style>",
     "GMEEK_VERSION":"last"
 }
 
