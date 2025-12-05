@@ -1,6 +1,6 @@
 {
     "GMEEK_VERSION": "last",
-    "title":"陶達若",
+    "title":"陶達若之部録",
     "subTitle":"本BLOG縱読也。複写内容者、点右下之「縱・横」一回。",
     "avatarUrl":"https://github.githubassets.com/favicons/favicon.svg",
     "style": "<style>#vertwrap{position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:9999;pointer-events:auto;overflow:hidden;}#vertwrap iframe{border:none;transform:rotate(90deg);transform-origin:top left;width:calc(100vh);height:calc(100vw);position:absolute;top:0;left:calc(100vw);}</style>",
