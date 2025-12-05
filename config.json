@@ -1,8 +1,8 @@
 {
     "title":"Blog Title",
+    "style": "assets/writing-mode.css",
+    "script": "assets/writing-mode.js",
     "subTitle":"Blog description",
     "avatarUrl":"https://github.githubassets.com/favicons/favicon.svg",
     "GMEEK_VERSION":"last"
-    "style": "assets/writing-mode.css",
-    "script": "assets/writing-mode.js"
 }
