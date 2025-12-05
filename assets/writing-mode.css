@@ -1,0 +1,27 @@
+.vertical-writing {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  line-height: 1.6;
+  font-family: "Yu Mincho", "Hiragino Mincho Pro", serif;
+}
+
+.horizontal-writing {
+  writing-mode: horizontal-tb;
+  text-orientation: mixed;
+  line-height: 1.6;
+  font-family: "Noto Sans", "Arial", sans-serif;
+}
+
+#toggleWritingMode {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  padding: 8px 12px;
+  background-color: #1f6feb;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
