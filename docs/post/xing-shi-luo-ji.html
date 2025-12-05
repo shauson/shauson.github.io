@@ -1,0 +1,1984 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="---
+headingDivider: '2'
+---
+> 逻辑学  
+> 形式逻辑  
+>> 传统形式逻辑  
+>>> 演绎  
+>>> 归纳  
+>> 现代形式逻辑  
+>>> 数理逻辑  
+>>> 人工逻辑  
+> 辩证逻辑  
+  
+# 逻辑学的研究对象＝理性思维  
+形式逻辑的研究对象＝思维形式及其规律，同时也涉及一些简单的逻辑方法  
+## 思维形式：思维内容的组成和表达方式（＝概念、判断、推理）  
+### 思维形式类型  
+1. 所有的S是P（性质判断）＝所有的日本国民都是日本义务教育的对象  
+2. aRb（关系判断）＝芥川龙之介来过中国  
+3. 如果p，那么q（复合判断＝假言判断＋连言判断＋选言判断）  
+### 思维形式的构成：逻辑常项、逻辑变项  
+1. 逻辑常项＝“所有的，是”“R”“如果，那么”  
+    R的处理：在性质判断中，”S“是主项，P是”谓项“，因此常项很好处理。">
+<meta property="og:title" content="形式逻辑">
+<meta property="og:description" content="---
+headingDivider: '2'
+---
+> 逻辑学  
+> 形式逻辑  
+>> 传统形式逻辑  
+>>> 演绎  
+>>> 归纳  
+>> 现代形式逻辑  
+>>> 数理逻辑  
+>>> 人工逻辑  
+> 辩证逻辑  
+  
+# 逻辑学的研究对象＝理性思维  
+形式逻辑的研究对象＝思维形式及其规律，同时也涉及一些简单的逻辑方法  
+## 思维形式：思维内容的组成和表达方式（＝概念、判断、推理）  
+### 思维形式类型  
+1. 所有的S是P（性质判断）＝所有的日本国民都是日本义务教育的对象  
+2. aRb（关系判断）＝芥川龙之介来过中国  
+3. 如果p，那么q（复合判断＝假言判断＋连言判断＋选言判断）  
+### 思维形式的构成：逻辑常项、逻辑变项  
+1. 逻辑常项＝“所有的，是”“R”“如果，那么”  
+    R的处理：在性质判断中，”S“是主项，P是”谓项“，因此常项很好处理。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://shauson.github.io/post/xing-shi-luo-ji.html">
+<meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
+<title>形式逻辑</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+
+</style>
+<style>.markdown-body{writing-mode:vertical-rl;text-orientation:upright;line-height:1.6;font-family:'Yu Mincho','Hiragino Mincho Pro','Microsoft YaHei','SimSun',serif;white-space:normal;word-break:break-word;overflow-wrap:break-word;}.markdown-body p,.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6,.markdown-body li,.markdown-body blockquote{writing-mode:vertical-rl;text-orientation:upright;margin:0;padding:0;}.markdown-body p+p,.markdown-body h1+p,.markdown-body h2+p{margin-top:1em;}.markdown-body pre,.markdown-body code,.markdown-body table,.markdown-body img{writing-mode:horizontal-tb!important;text-orientation:mixed!important;display:block;max-width:100%;overflow-x:auto;}@media (max-width:768px){.markdown-body{font-size:16px;line-height:1.4;}}</style>
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">形式逻辑</h1>
+<div class="title-right">
+    <a href="https://shauson.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/shauson/shauson.github.io/issues/2" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><hr>
+<h2>headingDivider: "2"</h2>
+<blockquote>
+<p>逻辑学<br>
+形式逻辑</p>
+<blockquote>
+<p>传统形式逻辑</p>
+<blockquote>
+<p>演绎<br>
+归纳<br>
+现代形式逻辑<br>
+数理逻辑<br>
+人工逻辑<br>
+辩证逻辑</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h1>逻辑学的研究对象＝理性思维</h1>
+<p>形式逻辑的研究对象＝思维形式及其规律，同时也涉及一些简单的逻辑方法</p>
+<h2>思维形式：思维内容的组成和表达方式（＝概念、判断、推理）</h2>
+<h3>思维形式类型</h3>
+<ol>
+<li>所有的S是P（性质判断）＝所有的日本国民都是日本义务教育的对象</li>
+<li>aRb（关系判断）＝芥川龙之介来过中国</li>
+<li>如果p，那么q（复合判断＝假言判断＋连言判断＋选言判断）</li>
+</ol>
+<h3>思维形式的构成：逻辑常项、逻辑变项</h3>
+<ol>
+<li>逻辑常项＝“所有的，是”“R”“如果，那么”<br>
+R的处理：在性质判断中，”S“是主项，P是”谓项“，因此常项很好处理。那关系判断中的常项为何呢？因为”a“、”b“都是主项，所以将”R“作为常项是合理的<br>
+逻辑常项决定思维的形式结构的类型</li>
+<li>逻辑变项＝S、P、a、b、p、q</li>
+</ol>
+<h2>规律：同一律、矛盾律、排中律</h2>
+<ol>
+<li>同一律：在同一个思维过程中，概念和命题的含义必须保持同一<br>
+即A＝A，A既可以是一个概念也可以是一个命题<br>
+歧义和曲解会违反同一律，也称偷换概念或偷换论题</li>
+<li>矛盾律：不矛盾律的简称。不能同时肯定两个互相矛盾的判断，必有一假。<br>
+即不能有相互矛盾的内涵。<br>
+对于命题，矛盾律指命题和其负命题不能同时为真</li>
+<li>排中率：两个相反的概念不能同时为假</li>
+</ol>
+<h2>逻辑方法：定义、划分、限制、概括、论证</h2>
+<ol>
+<li>定义：五种直接影响到战争胜负的基本因素是道、天、地、将、发</li>
+<li>划分：第一世界｜第二世界｜第三世界、发展中国家｜发达国家</li>
+<li>限制：球－足球－中国足球</li>
+<li>概括：中国足球－足球－求</li>
+<li>论证：演绎论证、归纳论证、反驳</li>
+</ol>
+<h1>形式逻辑知识系统</h1>
+<ol>
+<li>概念
+<ul>
+<li>知识
+<ol>
+<li>概念的特征：内涵</li>
+<li>概念的分类：外延</li>
+<li>概念间关系</li>
+</ol>
+</li>
+<li>方法
+<ol>
+<li>定义</li>
+<li>划分</li>
+<li>限制与概括</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>判断
+<ul>
+<li>简单判断
+<ol>
+<li>性质判断</li>
+<li>关系判断</li>
+</ol>
+</li>
+<li>复合判断
+<ol>
+<li>联言判断</li>
+<li>选言判断</li>
+<li>假言判断</li>
+<li>负判断</li>
+</ol>
+</li>
+<li>模态判断
+<ol>
+<li>真值模态判断</li>
+<li>规范模态判断</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>推理
+<ul>
+<li>演绎推理
+<ol>
+<li>简单判断推理<br>
+对当关系推理<br>
+判断变形推理<br>
+三段论推理</li>
+<li>复合判断推理<br>
+联言判断<br>
+选言判断<br>
+假言判断<br>
+负判断等值理论</li>
+<li>模态推理</li>
+</ol>
+</li>
+<li>归纳推理</li>
+</ul>
+</li>
+</ol>
+<h2>悖论</h2>
+<p>二难判断等</p>
+<h1>认识的分类</h1>
+<ul>
+<li>感性认识：感觉、知觉、印象</li>
+<li>理性认识：概念、判断与推理</li>
+</ul>
+<h1>什么是概念</h1>
+<p>是反映思维对象特有属性（固有属性或本质属性）的思维形式<br>
+我们把一个事物的性质与关系，都叫做事物的属性<br>
+具有相同属性的事物就形成一类，具有不同属性的事物就分别地形成不同的类<br>
+1. 特有属性＝某类事物都具有而别的事物不具有的属性<br>
+2. 本质属性＝有决定性的特有属性<br>
+3. 固有属性</p>
+<h2>概念和语词的关系</h2>
+<ol>
+<li>概念是客观事物在思想中的概括和反映，属于思维范畴<br>语词是表示事物或表达概念的声音与笔画，属于语言学的范畴</li>
+<li>并非所有的语词都表达概念（语助词）<br>同一语词可以表达不同的概念（侬、意思）<br>同一概念可以用不同的语词表达（父亲＝爸爸）<br>
+联系：任何一个概念都要借助语词表达<br>
+区别：不一一对应</li>
+</ol>
+<h2>概念的内涵和外延</h2>
+<ul>
+<li>内涵：对思维对象特有属性（本质属性）的反映</li>
+<li>外延：对思维对象范围的反映<br>
+明确概念＝明确概念的内涵和外延<br>
+内涵和外延式概念最基本的逻辑特征<br>
+内涵与外延既有确定性，也有灵活性</li>
+</ul>
+<h2>概念辨析</h2>
+<ul>
+<li>混淆概念＝在同一思维过程中，有某些联系或有某些表面相似之处的不同概念，当作相同的概念来使用；或是把不同的概念当作同一概念来使用</li>
+<li>偷换概念＝在思维和论辩过程中自觉或不自觉地违反同一律的逻辑要求，用一个概念去代换另一个不同的概念而产生的逻辑错误</li>
+</ul>
+<h2>概念的种类</h2>
+<ol>
+<li>根据外延的多少
+<ul>
+<li>单独概念与普遍概念（可以通过前是否能加数量词来区分）
+<ul>
+<li>单独概念＝反映只有一个分子的对象的，外延所反映的对象是独一无二的概念＝独一无二的概念＝指称唯一对象的概念
+<ul>
+<li>专有名词</li>
+<li>摹状词</li>
+<li>表达一个事物类的词项</li>
+<li>冠以表示单称的代词或指示代词</li>
+</ul>
+</li>
+<li>普遍概念＝指称两个或两个以上对象的概念，其外延是由两个或两个以上的对象组成的类
+<ul>
+<li>具有同一属性的一类事物，我们用一个普遍概念去指称或代表。如“动物”本身是个普遍概念模型，但世界上没有名叫“动物”的具体事物对象</li>
+<li>概念间关系：高、矮、不高不矮；支持、反对、不支持不反对</li>
+</ul>
+<blockquote>
+<p>一个语词所表达的是普遍概念还是单独概念，需要根据具体的语境分析</p>
+<blockquote>
+<p>《人民日报》是中共中央的机关报<br>
+小王和小张手里各拿着一份人民日报</p>
+</blockquote>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>根据内涵的不同
+<ul>
+<li>集合概念与非集合概念（群岛＆花朵）
+<ul>
+<li>集合概念＝反映由同类个体事物构成的不可分割的整体概念（反映集合体与个体的关系＝集合体有的属性个体不一定有，反之亦然）</li>
+<li>非集合概念＝不以由同类个体事物构成的整体作为反映对象的概念（表达类与分子的关系＝分子具有的属性类一定具有，类具有的属性分子也一定具有）
+<ul>
+<li>集合概念可能是普遍概念，也可能是单独概念</li>
+<li>普遍概念可能是集合概念，也可能是非集合概念（中国人）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>正概念与负概念（成年人＆未成年人）
+<ul>
+<li>正概念=思维中反映对象具有某种属性的概念，又叫肯定概念（合法、有机物、<strong>无机物</strong>、有线电、<strong>无线电</strong>、<strong>无锡</strong>、<strong>非洲</strong>、<strong>无产阶级</strong>）</li>
+<li>负概念=思维中反映对象不具有某种属性的概念，又叫否定概念（不合法、无罪）
+<ul>
+<li>正概念和负概念之分是就一定论域而言的，离开了论域就无从说起。
+<ul>
+<li>成年人+未成年人=人（论域）</li>
+<li>合法行为+非法行为=行为（论域）</li>
+</ul>
+</li>
+<li>逻辑的正负不涉及对内容的评价</li>
+<li>正负概念与语言学上的褒贬无关（勇敢-不勇敢；怯懦-不怯懦）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>绝对概念与相对概念
+<ul>
+<li>绝对概念=绝对反映性质（人、外交部）</li>
+<li>相对概念=相对反映关系（父、你、上、下）</li>
+</ul>
+</li>
+<li>实概念与虚概念
+<ul>
+<li>实概念=反映现实性存在或有所指的概念（北京奥运会、恐龙、共产主义）</li>
+<li>虚概念=反映非现实存在的虚构概念（永动机、酸素、上帝、孙悟空、贾宝玉）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2>概念间的关系（→欧拉图的画法）</h2>
+<ol>
+<li>全同关系=外延完全重叠
+<ul>
+<li>概念的外延完全相同，但内涵可以有差异（北京「内涵：城市」-中华人民共和国的首都「内涵：首都」）</li>
+</ul>
+</li>
+<li>上属关系和下属关系
+<ul>
+<li>上属关系=属概念对种概念的外延关系（学生→大学生）</li>
+<li>下属关系=种概念对属概念的外延关系（大学生→学生）
+<blockquote>
+<p>属概念：两个相互包含的概念中，外延较大的概念（学生【→大学生】）<br>
+种概念：两个相互包含的概念中，外延较小的概念（大学生【→学生】）<br>
+在传统逻辑中，真包含关系与真包含于关系统称“属种关系”（大学生-学生）<br>
+属种关系不是部分与整体的关系（上海市-x-松江区；亚洲-x-中国）</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>交叉关系=有且只有部分公共外延（教授与科学家）</li>
+<li>全异关系=矛盾关系+反对关系
+<ul>
+<li>矛盾关系=种概念的外延之和恰好等于邻近的属概念外延（男-女）</li>
+<li>反对关系=种概念的外延之和小于邻近的属概念外延（红色-黑色）</li>
+</ul>
+</li>
+</ol>
+<h2>概念的限制和概括</h2>
+<h3>其依据</h3>
+<p>具有属种关系的两概念，它们的内涵和外延存在反变关系=一个概念的内涵越多，那么这个概念的外延就越少；反之亦成立。因此，概念的限制和概括一定要在属种关系之间进行。</p>
+<h3>概念的限制</h3>
+<p>指缩小概念外延的逻辑方法，即增加内涵以缩小外延从而由属概念过渡到种概念的方法。（文明→精神文明→社会主义精神文明）（“天安门”→单独概念）</p>
+<h3>概念的概括</h3>
+<p>指扩大概念外延的逻辑方法，即减少内涵以扩大外延从而由种概念过渡到属概念的方法。（末代皇帝→清代皇帝→封建统治者）</p>
+<h2>概念的定义</h2>
+<h3>定义的概念</h3>
+<p>是揭示概念内涵的一种逻辑方法</p>
+<h3>定义的结构</h3>
+<ul>
+<li>被定义项：需要通过定义来揭示其内涵的概念</li>
+<li>定义项：用以揭示被定义项内涵的概念</li>
+<li>定义联项：用来联结被定义项和定义项的概念<br>
+在不同时期，人们对同一概念往往会作出不同的定义<br>
+因为事物在不同方面有不同的属性，因而事物有不同的定义<br>
+例：法院(被定义项)<strong>是</strong>（定义联项）独立行使审判权的国家机关（定义项）</li>
+</ul>
+<h3>定义的种类及其下定义的方法</h3>
+<ol>
+<li>属加种差定义的方法
+<ul>
+<li>指先确定概念再找种差的定义方法</li>
+<li>形式：被定义概念=种差+邻近的属概念</li>
+<li>其种类
+<ul>
+<li>性质定义=所揭示的种差是某类事物所特有的性质</li>
+<li>发生定义=所揭示的种差是某类事物产生或形成的原因或过程</li>
+<li>关系定义=所揭示的种差是某类事物与他类事物所特有的关系（负数是小于零的实数）</li>
+<li>功用定义=所揭示的种差是某类事物所特有的功用（商品是用来交换的劳动产品）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>语词定义
+<ul>
+<li>揭示语词所表达的意义定义</li>
+<li>种类
+<ul>
+<li>说明的词语定义=对已有确定意义的语词加以说明（驹就是小马）</li>
+<li>规定的语词定义=对某个语词的特殊含义或特别用法作出规定性解释（四项基本原则是指～）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3>定义的规则</h3>
+<ul>
+<li>定义项和被定义项的外延必须全等，否则就犯了“定义过宽”或“定义过窄”的逻辑错误。
+<ul>
+<li>人是会走路的动物（过宽）</li>
+<li>宗教信仰自由是信仰某种宗教的自由（过窄）</li>
+</ul>
+</li>
+<li>定义项不应直接或间接地包含被定义项，否则烦“循环定义/同语反复”的逻辑错误。
+<ul>
+<li>麻醉是麻醉剂起的作用</li>
+</ul>
+</li>
+<li>定义项不应包含含混的词语或比喻，否则犯“定义不清”或“比喻定义”的逻辑错误
+<ul>
+<li>梦是人在睡眠时出现的不明不白的胡思乱想</li>
+<li>爱情是两颗心共同撞击出的火花</li>
+</ul>
+</li>
+<li>一般情况下，定义项不应包含负概念，否则犯“否定义”的逻辑错误
+<ul>
+<li>直线时不弯曲的线</li>
+<li>特殊情况下（缺少某种属性恰好是该事物的本性时），可采取否定定义
+<ul>
+<li>无理数是无限不循环小数</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>概念的划分</h2>
+<h3>何为划分</h3>
+<p>明确概念外延的逻辑方法。其意义在于将外延宽泛的属概念分为若干个下位种概念，使思想表达得更加准确和便捷（工业→轻工业/重工业→冶金工业/煤炭工业/电力工业/重型机械制造业等）</p>
+<ul>
+<li>不能用于单独概念</li>
+<li>不同于分解=（中国→东北/西北/西南/华北华中/华南/华东）</li>
+</ul>
+<h3>划分的构成</h3>
+<ul>
+<li>母项</li>
+<li>子项</li>
+<li>划分标准</li>
+</ul>
+<h3>划分的规则</h3>
+<ul>
+<li>划分的各子项之和必须与母项相称，否则犯“多出子项”或“遗漏子项”错误</li>
+<li>划分后各子项的外延应当相互排斥，否则犯“子项相容”的错误</li>
+<li>划分应当按层次逐级进行，否则犯“越级划分”错误（学校教师=大学教师、中学女教师、小学男教师）</li>
+<li>每次划分须按同一标准进行，否则犯“多重标准”错误</li>
+</ul>
+<h2>划分、分解、列举</h2>
+<p>划分=把一个属词项分为若干个种词项，或把一类对象分为若干个子类<br>
+分解=把一个具体事物肢解为若干组成部分，分解前的具体事物与分解后的组成部分之间时整体与部分的关系，分解后各个组成部分不具有整体的本质属性</p>
+<h1>判断（有些情况下被称为命题）</h1>
+<h2>什么是判断</h2>
+<p>是对事物有所断定的思维形式</p>
+<h2>判断的特征（命题是否成其为判断的标准）</h2>
+<ul>
+<li>判断都有所断定，或肯定或否定；</li>
+<li>判断都有真假，要么是真判断要么是假判断。</li>
+</ul>
+<h2>判断与语句的关系——形式与内容</h2>
+<ul>
+<li>判断时语句的思想内容，语句时判断的语言形式</li>
+<li>表达判断的语句叫做命题，但并非所有的语句都表达判断
+<ul>
+<li>只有能分辨真假的语句才叫做命题（一般来说只有陈述句和反问句能叫做命题）</li>
+</ul>
+</li>
+<li>具体关系
+<ul>
+<li>同一语句表达不同判断（一个农民画家的画展已经开幕了）</li>
+<li>不同语句表示相同判断（中国队大胜日本队=中国队大败日本队）</li>
+</ul>
+</li>
+</ul>
+<h2>判断与命题的关系</h2>
+<p>一般来说，所有的判断都是命题，判断是经过断定了的命题<br>
+但不是所有的命题都是判断<br>
+判断注重内容方面命题侧重形式方面</p>
+<h2>判断的种类</h2>
+<ul>
+<li>判断
+<ul>
+<li>模态判断
+<ul>
+<li>真值勤模态判断
+<ul>
+<li>必然判断</li>
+<li>可能判断</li>
+</ul>
+</li>
+<li>规范模态判断
+<ul>
+<li>必然判断</li>
+<li>禁止判断</li>
+<li>允许判断</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>非模态判断（重点）
+<ul>
+<li>简单判断
+<ul>
+<li>性质判断</li>
+<li>关系判断</li>
+</ul>
+</li>
+<li>符合判断
+<ul>
+<li>联言判断</li>
+<li>选言判断</li>
+<li>假言判断</li>
+<li>负判断</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>性质判断</h2>
+<p>就是直接断定事物具有或者不具有某种性质的判断，又称直言判断。（所有的经历都是财富）</p>
+<h3>性质判断的逻辑结构</h3>
+<ul>
+<li>公式=所有（有的）S是（不是）P
+<ul>
+<li>逻辑变项
+<ul>
+<li>主项=S</li>
+<li>谓项=p</li>
+</ul>
+</li>
+<li>逻辑常项
+<ul>
+<li>联项=是/不是</li>
+<li>量项=所有/有的
+<ul>
+<li>全称量词=所有【可省略】</li>
+<li>特称量词=有的<br>
+不包括其他判断成分，性质判断只断定了S和p这两个概念之间的外延关系，所以它属于简单判断</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4>量项</h4>
+<ul>
+<li>表示所断定的主项的数量或范围的概念
+<ul>
+<li>全称量项=对主项的全部外延做了断定=“所有的”=A（符号）</li>
+<li>特称量项=只对主项的部分外延做了断定=“有”=I（符号）</li>
+<li>单称量项=所断定的主项只是某一个个别对象</li>
+</ul>
+</li>
+</ul>
+<h3>性质判断的种类（根据质【肯否】和量【全/特/单称】来划分）</h3>
+<ul>
+<li>单称肯定判断=断定某一个对象具有某种性质
+<ul>
+<li>思维形式=这个S是p=Sap（简写）=a（简称）</li>
+<li>单称肯定判断的主项是一个<strong>单独概念</strong>，在语言表达上多用专有名词，不用量词</li>
+<li>例：杭州市一个风景优美的旅游城市</li>
+<li>由于单称命题对主项全部外延都作了断定，所以传统逻辑通常将单称命题视为全称命题的特例加以研究</li>
+</ul>
+</li>
+<li>单称否定判断=断定某一个对象不具有某种性质的判断
+<ul>
+<li>思维形式=这个S不是p=Sep=e</li>
+<li>例：他不是党员</li>
+</ul>
+</li>
+<li>全称肯定判断=断定一类对象中全体对象具有某种性质的判断
+<ul>
+<li>思维形式=所有S是p=SAp=A</li>
+<li>例：所有的公民都必须遵纪守法</li>
+</ul>
+</li>
+<li>全称否定判断=断定一类对象中全体对象不具有某种性质的判断
+<ul>
+<li>思维形式=所有S不是p=SEp=E</li>
+<li>例：所有的检察机关都不是审判机关</li>
+</ul>
+</li>
+<li>特称肯定判断=断定一类对象中有对象具有某种性质的判断
+<ul>
+<li>思维形式=有S是p=SIp=I</li>
+<li>例：有些秘书是称职的/有些国家用了中国疫苗</li>
+</ul>
+</li>
+<li>特称否定判断断定一类对象中有对象不具有某种性质的判断
+<ul>
+<li>思维形式=有S不是p=SOp=O</li>
+<li>例：存在的东西不都是合理的</li>
+</ul>
+</li>
+</ul>
+<h4>同素材性质判断之间的真假关系</h4>
+<p>判断的真假主要取决于它的断定是否符合实际</p>
+<h5>四种判断与四种关系之间的真值表</h5>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">全同关系</th>
+<th align="center">下属关系</th>
+<th align="center">上属关系</th>
+<th align="center">交叉关系</th>
+<th align="center">全异关系</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">SAp</td>
+<td align="center">+</td>
+<td align="center">+</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">SEp</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">+</td>
+</tr>
+<tr>
+<td align="center">SIp</td>
+<td align="center">+</td>
+<td align="center">+</td>
+<td align="center">+</td>
+<td align="center">+</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">SOp</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">+</td>
+<td align="center">+</td>
+<td align="center">+</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<h5>逻辑方阵（对当关系图）</h5>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th align="center">A</th>
+<th align="center">—</th>
+<th align="center">不能同真=反对关系</th>
+<th align="center">—</th>
+<th align="center">E</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">｜</td>
+<td align="center">╲</td>
+<td align="center"></td>
+<td align="center">╱</td>
+<td align="center">｜</td>
+</tr>
+<tr>
+<td align="center">差等关系</td>
+<td align="center"></td>
+<td align="center">不能同真假=矛盾关系</td>
+<td align="center"></td>
+<td align="center">差等关系</td>
+</tr>
+<tr>
+<td align="center">｜</td>
+<td align="center">╱</td>
+<td align="center"></td>
+<td align="center">╲</td>
+<td align="center">｜</td>
+</tr>
+<tr>
+<td align="center">I</td>
+<td align="center">—</td>
+<td align="center">不能同假=下反对关系</td>
+<td align="center">—</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td align="center">差等关系=A/E（上侧）为真时，I/O为真；当I/O（下侧）为假时，A/E为假。当A/E为假时，I/O真假难辨，当I/O为真时，A/E真假难辨</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<h3>周延性与周延概念</h3>
+<h3>什么是周延性</h3>
+<p>指在性质判断中，对主项、谓项外延数量的断定情况。<br>
+如果判断中断定了主项或谓项的全部外延，那么这个主项或谓项就是周延的；否则，就不是周延的。</p>
+<h4>概念周延性的判断</h4>
+<ol>
+<li>全称判断的主项周延【所有S】</li>
+<li>特称判断的主项不周延【有S】</li>
+<li>否定判断的谓项周延【（不是）p】</li>
+<li>肯定判断的谓项不周延【（是）p】</li>
+</ol>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">S</th>
+<th align="center">p</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">A</td>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">E</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">I</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">O</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">例：</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<ul>
+<li>形式逻辑是什么？【此时为下定义，形式逻辑具有周延性，因此很难回答】</li>
+<li>什么是形式逻辑？【此时形式逻辑不具有周延性，因此相对容易回答】</li>
+</ul>
+<h2>关系判断</h2>
+<p>是断定事物之间关系的判断</p>
+<h3>关系判断的逻辑结构</h3>
+<ul>
+<li>关系主项=a、b、c...=某种关系的承担者</li>
+<li>关系项=R=关系的具体内容～关系判断的谓项</li>
+<li>量项=关系主项的判断范围&lt;全称、特称、单称<br>
+公式=aRb/R（a、b、c...）</li>
+</ul>
+<h3>关系的逻辑特性</h3>
+<h4>关系的对称型</h4>
+<ol>
+<li>aRb为真，则bRa一定真。此时R=对称关系</li>
+<li>aRb为真，bRa不确定真假。此时R=非对称关系</li>
+<li>aRb为真，则bRa一定加。此时R=反对称关系</li>
+</ol>
+<h4>关系的传递性</h4>
+<ol>
+<li>当aRb为真且bRc也为真时，aRc一定真。此时R=传递关系</li>
+<li>当aRb为真且bRc也为真时，aRc不确定真假。此时R=非传递关系</li>
+<li>当aRb为真且bRc也为真时，aRc一定假。此时R=反传递关系</li>
+</ol>
+<h2>复合判断</h2>
+<p>简单判断是不包含其它判断的判断，性质判断与关系判断都属于简单判断。复合判断是包含着若干肢判断的判断。包括假言判断、选言判断、联言判断、负判断等4种具体形式。</p>
+<h3>假言判断</h3>
+<p>假言判断就是断定一事物状况是另一事物状况存在条件的判断</p>
+<h4>假言判断的结构</h4>
+<ul>
+<li>前件=条件的判断</li>
+<li>后件=结果的判断</li>
+<li>联结项=前件与后件之间的逻辑关系&lt;如果那么/仅有才/当且仅当才</li>
+</ul>
+<h4>假言判断的类型</h4>
+<h5>充分条件假言判断</h5>
+<p>充分条件=产生某一结果的充足条件<br>
+特点=有之必然，无之未必不然；已然未必有之，不然必无之<br>
+逻辑形式=“p → q”（p蕴涵q）=如果p，那么q/只要p，就q/若p，则q</p>
+<ul>
+<li>哲学含义： 大原因→小结果</li>
+<li>一个充分条件假言判断的真假，并不取决于前件和后件本身的真假，而取决于前件和后件之间是否有相应的充分条件关系。</li>
+</ul>
+<h6>真值表</h6>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>p</th>
+<th>q</th>
+<th>p → q</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>真</td>
+<td>真</td>
+<td>真</td>
+</tr>
+<tr>
+<td>真</td>
+<td>假</td>
+<td>假</td>
+</tr>
+<tr>
+<td>假</td>
+<td>真</td>
+<td>真</td>
+</tr>
+<tr>
+<td>假</td>
+<td>假</td>
+<td>真</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<h5>蕴含怪论</h5>
+<ul>
+<li>当前件假时，无论后件如何，整个真值形式p→q都为真=一个假命题蕴涵着任何命题</li>
+<li>后件真时，无论前件如何，整个真值形式p→q也都是真的=一个真命题为任何命题所蕴涵
+<ul>
+<li>如果珠穆朗玛峰是世界最低的山峰，那么泰山的主峰玉皇顶就肯定比它高。（前件假后件假命题真）</li>
+</ul>
+</li>
+</ul>
+<h5>必要条件假言判断</h5>
+<p>必要条件=产生某一结果所必须具备、不可缺少的条件<br>
+特点=无之必不然，有之未必然；不然未必无之，已然必有之<br>
+逻辑形式=“p←q”（p反蕴涵q）=只有p，才q/除非p，才q/不p，不q/没有p，就没有q</p>
+<ul>
+<li>哲学含义： 小原因→大结果</li>
+</ul>
+<h6>真值表</h6>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>p</th>
+<th>q</th>
+<th>p←q</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>真</td>
+<td>真</td>
+<td>真</td>
+</tr>
+<tr>
+<td>真</td>
+<td>假</td>
+<td>真</td>
+</tr>
+<tr>
+<td>假</td>
+<td>真</td>
+<td>假</td>
+</tr>
+<tr>
+<td>假</td>
+<td>假</td>
+<td>真</td>
+</tr>
+<tr>
+<td>只有在前件假而后件真时，前后件的必要条件是不成立的</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<h5>充分必要条件假言判断</h5>
+<p>充分必要（充要）条件=产生某一结果所需要的充足而且不可或缺的条件<br>
+特点=有之必然，无之必不然<br>
+逻辑形式=“p ↔ q”（p等值q）=有且只有p，才q/当且仅当p，才q/只要而且只有p，才q</p>
+<h6>真值表</h6>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>p</th>
+<th>q</th>
+<th>p↔q</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>真</td>
+<td>真</td>
+<td>真</td>
+</tr>
+<tr>
+<td>真</td>
+<td>假</td>
+<td>假</td>
+</tr>
+<tr>
+<td>假</td>
+<td>真</td>
+<td>假</td>
+</tr>
+<tr>
+<td>假</td>
+<td>假</td>
+<td>真</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<h3>选言判断</h3>
+<p>是断定事物的多种情况中至少有一种情况存在的复合判断</p>
+<h4>结构</h4>
+<ul>
+<li>选言肢</li>
+<li>选言联接项</li>
+</ul>
+<h4>类型</h4>
+<ul>
+<li>相容的选言判断=选言肢可以同真
+<ul>
+<li>逻辑形式=p∨q（p析取q）～或、或/可能、也可能/也许、也许</li>
+</ul>
+</li>
+</ul>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>p</th>
+<th>q</th>
+<th>p∨q</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>真</td>
+<td>真</td>
+<td>真</td>
+</tr>
+<tr>
+<td>真</td>
+<td>假</td>
+<td>真</td>
+</tr>
+<tr>
+<td>假</td>
+<td>真</td>
+<td>真</td>
+</tr>
+<tr>
+<td>假</td>
+<td>假</td>
+<td>假</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<ul>
+<li>不相容的选言判断=选言肢不可以同真
+<ul>
+<li>逻辑形式=p⩒q（p不相容析取q）～要么、要么/不是、就是/～与～不可兼得</li>
+</ul>
+</li>
+</ul>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>p</th>
+<th>q</th>
+<th>p⩒q</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>真</td>
+<td>真</td>
+<td>假</td>
+</tr>
+<tr>
+<td>真</td>
+<td>假</td>
+<td>真</td>
+</tr>
+<tr>
+<td>假</td>
+<td>真</td>
+<td>真</td>
+</tr>
+<tr>
+<td>假</td>
+<td>假</td>
+<td>假</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<ul>
+<li>一个选言判断的选言肢穷尽，这个选言判断一定为真</li>
+<li>一个选言判断为真，它的选言肢却未必穷尽</li>
+</ul>
+<h3>联言判断</h3>
+<p>是断定事物的多种情况同时存在的复合判断</p>
+<h4>结构</h4>
+<ul>
+<li>联言肢</li>
+<li>联接项<br>
+逻辑形式=p∧q（p合取q）～并且/既、又/一面、一面/不但、而且</li>
+</ul>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>p</th>
+<th>q</th>
+<th>p∧q</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>真</td>
+<td>真</td>
+<td>真</td>
+</tr>
+<tr>
+<td>真</td>
+<td>假</td>
+<td>假</td>
+</tr>
+<tr>
+<td>假</td>
+<td>真</td>
+<td>假</td>
+</tr>
+<tr>
+<td>假</td>
+<td>假</td>
+<td>假</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<ul>
+<li>联言肢的顺序问题=顺序影响联言肢的实现顺序</li>
+</ul>
+<h4>负判断</h4>
+<p>是通过否定一个判断而形成的一个复合判断</p>
+<h5>逻辑结构</h5>
+<ul>
+<li>肢判断</li>
+<li>否定联接词<br>
+逻辑形式=并非p<br>
+负判断与它的肢判断之间存在着矛盾关系</li>
+</ul>
+<h5>必要条件和充分条件假言命题的相互转换</h5>
+<p>如果前件是后件的充分条件，那么后件就是前件的必要条件；相应地，如果前件是后件的必要条件，那么后件就是前件的充分条件。</p>
+<ul>
+<li>①充分与必要条件等值转换∶（p→q）↔︎（q←p）</li>
+<li>②假言易位： (p→q)↔︎(非q→非p)
+<ul>
+<li>综合①②结论：（p→q）↔︎（q←p）↔︎（非q→非p ）</li>
+</ul>
+</li>
+</ul>
+<h5>各种判断的负判断</h5>
+<ul>
+<li>性质判断：
+<ul>
+<li>﹁SAP↔︎SOP</li>
+<li>﹁SEP↔︎SIP</li>
+<li>﹁SOP↔︎SAP</li>
+<li>﹁SIP↔︎SEP。</li>
+</ul>
+</li>
+<li>联言判断：
+<ul>
+<li>﹁（p∧q）↔︎﹁p∨﹁q</li>
+</ul>
+</li>
+<li>选言判断：
+<ul>
+<li>（相容的）﹁（p∨q）↔︎﹁p∧﹁q</li>
+<li>（不相容的）﹁（p∨q）↔︎（﹁p∧q）∨（p∧﹁q）</li>
+</ul>
+</li>
+<li>假言判断：
+<ul>
+<li>（充分条件）﹁（p→q）↔︎p∧﹁q。</li>
+<li>（必要条件）﹁（p←q）↔︎﹁p∧q。</li>
+<li>（充要条件）﹁（p↔q）↔︎p∧﹁q</li>
+<li>（充要条件）﹁（p↔q）↔︎﹁p∧q。</li>
+</ul>
+</li>
+<li>充分条件与选言判断之间的转换
+<ul>
+<li>p→q↔︎﹁p∧q</li>
+</ul>
+</li>
+<li>必要条件与选言判断之间的转换
+<ul>
+<li>p←q↔︎(pV﹁q)</li>
+</ul>
+</li>
+</ul>
+<h1>推理</h1>
+<p>是根据已知判断推出新判断的思维形式，从已知推出未知的思维过程。<br>
+推理由判断组成，组成推理的判断包括<strong>前提</strong>和<strong>结论</strong>两个部分，已知判断是前提，新推出的判断为结论。</p>
+<h2>正确推理的条件</h2>
+<ol>
+<li>前提必须真实</li>
+<li>形式必须正确。</li>
+</ol>
+<h2>性质推理</h2>
+<h3>直接推理</h3>
+<h4>换质法</h4>
+<p>就是通过改变一个性质判断联项的质，并把这一判断的谓项换成其矛盾概念，从而得出另一判断的直接推理。<br>
+规则：<br>
+①肯定<g-emoji class="g-emoji" alias="left_right_arrow">↔️</g-emoji>否定<br>
+②P→<del>P</del><br>
+推理形式：SAP<g-emoji class="g-emoji" alias="left_right_arrow">↔️</g-emoji>SE<del>P</del>；SEP<g-emoji class="g-emoji" alias="left_right_arrow">↔️</g-emoji>SA<del>P</del>；SIP<g-emoji class="g-emoji" alias="left_right_arrow">↔️</g-emoji>SO<del>P</del>；SOP<g-emoji class="g-emoji" alias="left_right_arrow">↔️</g-emoji>SI<del>P</del>；</p>
+<h4>换位法</h4>
+<p>就是通过互换一个性质判断主谓项的位置，从而得出另一性质判断的直接推理。<br>
+规则：<br>
+①S<g-emoji class="g-emoji" alias="left_right_arrow">↔️</g-emoji>P<br>
+②不周延→不周延<br>
+推理形式：SAP<g-emoji class="g-emoji" alias="left_right_arrow">↔️</g-emoji>PIS（限制换位；SEP<g-emoji class="g-emoji" alias="left_right_arrow">↔️</g-emoji>PES（限制换位）；SIP<g-emoji class="g-emoji" alias="left_right_arrow">↔️</g-emoji>PIS（简单换位）；SOP（不能换位）<br>
+​￼#### 换质位法推理<br>
+就是交替运用换质法和换位法推理而形成的直接推理，包括先换质再换位和先换位再换质两种情形<br>
+先换质再换位<br>
+SAP→SE<del>P</del>→<del>P</del>ES→<del>P</del>A<del>S</del>→<del>S</del>I<del>P</del>→<del>S</del>OP→X<br>
+SEP→SA<del>P</del>→<del>P</del>IS→<del>P</del>OS→X<br>
+SIP→SO<del>P</del>→X<br>
+SOP→SI<del>P</del>→<del>P</del>IS→<del>P</del>O<del>S</del>→X<br>
+先换位再换质<br>
+SAP→PIS→PO<del>S</del>→X<br>
+SEP→PES→PA<del>S</del>→<del>S</del>IP→<del>S</del>O<del>P</del>→X<br>
+SIP→PIS→PO<del>S</del>→X<br>
+SOP→X</p>
+<h4>附性法推理</h4>
+<p>就是在性质判断的主项和谓项前同时附加某种共同属性后形成的直接推理<br>
+推理形式：SAP→QS A QP<br>
+P. S.:当附加属性与主项或谓项生成一个新概念的时候，附性法推理的结论不具有可靠性</p>
+<h3>三段论（间接推理）</h3>
+<p>三段论就是借助一个共同的概念，将两个性质判断联系起来，从而得出另一个性质判断的思维过程。他是传统逻辑的推理理论的核心部分，也是我们日常思维中最常用的推理类型。<br>
+三段论中出现的概念：S（小项＝结论的主项）；M（中项）；P（大项＝结论的谓项）<br>
+推理形式：<br>
+M→P（大前提＝含有大项的前提）<br>
+S→M（小前提＝含有小项的前提）<br>
+S→P</p>
+<h4>三段论推理的规则</h4>
+<ol>
+<li>一个三段论只能有三个不同的概念，否则犯“四概念”（属于偷换概念）的错误。</li>
+<li>中项概念在前提中至少周延一次，否则犯“中项不周延”的错误</li>
+<li>前提中不周延的概念，结论中也不可周延。否则犯“大项不当周延”或“小项不当周延”的错误</li>
+<li>两个否定前提不能得出结论：前提之一为否定，结论必为否定</li>
+<li>两个特称前提不能得出结论：前提之一为特称，结论必为特称</li>
+</ol>
+<h4>三段论的格</h4>
+<p>=就是由中项在前提中的不同位置所构成的不同形式</p>
+<h5>第一格（审判格、典型格）</h5>
+<p>=中项为大前提的主项和小前提的谓项<br>
+规则：</p>
+<ol>
+<li>大前提必须是全称的</li>
+<li>小前提必须是肯定的<br>
+作用：从一般推出特殊<br>
+推理形式：<br>
+M——P<br>
+S——M<br>
+S——P</li>
+</ol>
+<h5>第二格（区别格）</h5>
+<p>=中项为大、小前提的谓项<br>
+规则：</p>
+<ol>
+<li>大前提必须是全称的</li>
+<li>前提中必须有一个是否定的<br>
+作用：前提中必有一个是否定的<br>
+推理形式：<br>
+P——M<br>
+S——M<br>
+S——P</li>
+</ol>
+<h5>第三格（反驳格）</h5>
+<p>=中项为大、小前提的主项<br>
+规则：</p>
+<ol>
+<li>小前提必须是肯定的</li>
+<li>结论必须是特称的<br>
+作用=反驳全称命题<br>
+推理形式：<br>
+M——P<br>
+M——S<br>
+S——P</li>
+</ol>
+<h5>第四格（复合格）</h5>
+<p>=中项为大前提的谓项，小前提的主项<br>
+规则：</p>
+<ol>
+<li>如果前提中有一否定，大前提必须全称</li>
+<li>如果大前提肯定，则小前提必须全称</li>
+<li>如果小前提肯定，则结论必须特</li>
+<li>任何一个前提都不能是特称否定命题</li>
+<li>结论不能是全称肯定命题<br>
+推理形式：<br>
+P——M<br>
+M——S<br>
+S——P</li>
+</ol>
+<h4>三段论的式</h4>
+<p>=前提和结论的质（肯定或否定）量（全称或特称）的组合形式</p>
+<h5>三段论的有效式</h5>
+<p>第一格：AAA、EAE、AII、EIO、（AAI）、（EAO）<br>
+第二格：AEE、EAE、AOO、EIO、(AEO）、（EAO）<br>
+第三格：AAI、EAO、AII、EIO、IAI、OAO<br>
+第四格：AAI、EAO、AEE、EIO、IAI、（AEO）</p>
+<h4>三段论的省略式</h4>
+<p>根据结论补足大项/小项，而结论中没有的便是中项<br>
+1）对于省略前提的三段论其补足的方法为：<br>
+①找出结论并明确小项（S）和大项（P）；<br>
+②根据小项（S）和大项（P）确定省略的是大前提还是小前提；<br>
+③根据规则补足<br>
+2）对于省略结论的三段论其补足的方法为：<br>
+①找到S、M、P三个项；<br>
+②明确中项（M）；<br>
+③根据规则补足。</p>
+<h4>混合三段论推理</h4>
+<p>在前提中既有关系命题又有性质命题所形成的推理<br>
+推理形式：<br>
+所有的a与b有R关系<br>
+所有的c都是a<br>
+所有的c与b有R关系<br>
+逻辑规则:</p>
+<ol>
+<li>混合关系三段论前提中的性质命题必须是肯定的</li>
+<li><em>媒介项的概念必须至少周延一次</em></li>
+<li><em>前提中不周延的概念在结论中不得周延</em></li>
+<li>如果作为前提的关系命题是肯定(或否定)的，则作为结论的关系命题也必须是肯定(或否定)的</li>
+<li>如果关系R不是对称的，则前提中作为关系者前项(或后项)的那个概念在结论中也必须相应地作为关系者前项(或后项)</li>
+</ol>
+<h2>关系推理</h2>
+<p>以关系命题为前提，根据不同关系的逻辑特性进行的推理</p>
+<h3>直接关系推理</h3>
+<p>根据对称关系进行的推理=aRb，所以，bRa<br>
+根据反对称关系进行的推理=aRb，所以，b反Ra</p>
+<h3>间接关系推理</h3>
+<p>根据传递关系进行的推理=aRb，bRc，所以，aRc<br>
+根据反传递关系进行的推理=aRb，bRc，所以，a反Rc</p>
+<h2>假言推理</h2>
+<p>以假言命题为前提、并且根据假言命题的逻辑特性进性进行的推理，有三种形式：</p>
+<h3>充分条件假言推理</h3>
+<p>以充分条件假言命题为前提进行的推理<br>
+两种正确的形式:</p>
+<ul>
+<li>“肯定前件式”：
+<ul>
+<li>p→q，</li>
+<li>p；</li>
+<li>∴q</li>
+</ul>
+</li>
+<li>“否定后件式”：
+<ul>
+<li>p→q，</li>
+<li>﹁q；</li>
+<li>∴﹁p</li>
+</ul>
+</li>
+<li>肯定前件式的含义为“有之必然”，</li>
+<li>否定后件式的含义为“不然必无之”
+<ul>
+<li>结论确定</li>
+</ul>
+</li>
+<li>否定前件式  “无之未必不然”</li>
+<li>肯定后件式  “已然未必有之”
+<ul>
+<li>结论不确定</li>
+</ul>
+</li>
+</ul>
+<h3>必要条件假言推理</h3>
+<p>是以必要条件假言命题为前提进行的推理<br>
+两种正确形式：</p>
+<ul>
+<li>“否定前件式”</li>
+<li>p←q，</li>
+<li>﹁p；</li>
+<li>∴﹁q。</li>
+<li>“肯定后件式”</li>
+<li>p←q，</li>
+<li>q；</li>
+<li>∴p。</li>
+</ul>
+<h3>充要条件假言推理</h3>
+<p>是以充要条件假言命题为前提进行的推理<br>
+有四种正确形式：</p>
+<ul>
+<li>“肯定前件式”
+<ul>
+<li>p↔q，</li>
+<li>p；</li>
+<li>∴q</li>
+</ul>
+</li>
+<li>“否定前件式”
+<ul>
+<li>p↔q，</li>
+<li>﹁p；</li>
+<li>∴﹁q</li>
+</ul>
+</li>
+<li>“肯定后件式”
+<ul>
+<li>p↔q，</li>
+<li>q；</li>
+<li>∴p</li>
+</ul>
+</li>
+<li>“否定后件式”
+<ul>
+<li>p↔q，</li>
+<li>﹁q；</li>
+<li>∴﹁p</li>
+</ul>
+</li>
+</ul>
+<h2>选言推理</h2>
+<p>以选言命题为前提、并且根据选言命题的逻辑特性进行的推理。选言推理有两种类型：</p>
+<h3>相容选言推理</h3>
+<p>以相容选言命题为前提，根据相容选言命题的逻辑性质进行的推理<br>
+两条规则：</p>
+<ol>
+<li>否定一部分选言支，就要肯定另一部分选言支</li>
+<li>肯定一部分选言支，不能否定另一部分选言支<br>
+根据规则，相容选言推理只有一个正确的形式，即否定肯定式：</li>
+</ol>
+<ul>
+<li>或者p，或者q，</li>
+<li>﹁p（q）；</li>
+<li>∴q（p）<br>
+不存在肯定否定式，即p（q）无法推出﹁q（p）</li>
+</ul>
+<h3>不相容选言推理</h3>
+<p>以不相容选言命题为前提，根据不相容选言命题的逻辑性质进行的推理<br>
+两条规则：</p>
+<ol>
+<li>否定一部分选言支，就要肯定另一部分选言支</li>
+<li>肯定一部分选言支，就要否定另一部分选言支。<br>
+有两个正确形式：</li>
+</ol>
+<ul>
+<li>否定肯定式：
+<ul>
+<li>或者p，或者q，</li>
+<li>﹁p（q）；</li>
+<li>∴q（p）</li>
+</ul>
+</li>
+<li>肯定否定式：
+<ul>
+<li>或者p，或者q，</li>
+<li>p（q）；</li>
+<li>∴﹁q（p）</li>
+</ul>
+</li>
+</ul>
+<h2>联言推理</h2>
+<p>前提或结论中包含有联言命题、并且根据联言命题的逻辑特性所进行的推理<br>
+有三种形式：</p>
+<ul>
+<li>分解式：</li>
+<li>p∧q→p（或者q）</li>
+<li>合成式：</li>
+<li>p，q→p∧q</li>
+<li>否定式：</li>
+<li>﹁p→﹁(p∧q)</li>
+</ul>
+<h2>二难推理</h2>
+<p>由两个假言判断和一个选言判断做前提构成的推理，因此也称假言选言推理</p>
+<h3>二难推理的分类</h3>
+<ul>
+<li>简单构成式：
+<ul>
+<li>p→q，r→q；</li>
+<li>q∨r，</li>
+<li>∴q�</li>
+</ul>
+</li>
+<li>简单破坏式：
+<ul>
+<li>p→q， p→r；</li>
+<li>﹁q∨﹁r，</li>
+<li>∴非p</li>
+</ul>
+</li>
+<li>复杂构成式：
+<ul>
+<li>p→q，r→s；</li>
+<li>p∨r，</li>
+<li>∴q∨s</li>
+</ul>
+</li>
+<li>复杂破坏式：
+<ul>
+<li>p→q，s→r；</li>
+<li>﹁q∨﹁r，</li>
+<li>∴﹁p∨﹁s</li>
+</ul>
+</li>
+</ul>
+<h2>归纳推理</h2>
+<p>（1）区别：<br>
+①推理方向：归纳推理是从个别到一般；演绎推理是从一般到个别。<br>
+②条件关系： 归纳推理的前提是结论的必要条件；演绎推理的前提是结论的充分条件。<br>
+（2）联系<br>
+①演绎推理以归纳推理为基础；②归纳推理以演绎推理为先导</p>
+<h3>完全归纳推理（完全归纳法）</h3>
+<p>根据对某类事物所有个体的考察，发现它们具有（或不具有）某种属性，从而推出该类事物都具有（或不具有）这种属性的推理过程<br>
+公式：<br>
+S1—P<br>
+S2—P�<br>
+……<br>
+Sn—P<br>
+∴S—P<br>
+规则：<br>
+①必须确知所考察的某类对象的全部个体。（定量分析）<br>
+②必须对每个个体都进行了真实可靠的考察。（定性分析）�<br>
+局限性：对于具有无穷分子的那类事物或者暂时无法确知其分子数量的那类事物，不能运用完全归纳推理。</p>
+<h3>不完全归纳推理</h3>
+<p>根据某类事物部分个体的考察，发现它们具有（或不具有）某种属性，从而推出该类事物都具有（或不具有）这种属性的推理过程<br>
+不完全归纳推理的结论超出其前提所断定的范围，因而只具有或然的真理性</p>
+<h4>简单枚举法</h4>
+<p>根据某类事物的部分个体具有(或不具有)某种属性，而且未曾发现反例，从而推论出该类事物都具有(或不具有)某种属性的推理过程。=或然性结论</p>
+<h4>科学归纳法</h4>
+<p>就是根据某类事物的部分个体具有（或不具有）某种属性，<strong>而且发现这些对象和相关属性之间存在着必然联系</strong>，从而推出该类事物都具有（或不具有）某种属性的推理过程。=必然性结论）</p>
+<h3>归纳推理的应用：探求因果联系的穆勒五法</h3>
+<h4>求同法(契合法)</h4>
+<p>在被研究现象出现的若干场合中，只有一个情况是相同的，其他情况都不相同，那么这个唯一共同的情况就是被研究现象的原因(或结果)<br>
+公式：</p>
+<p>|场合|先行或后行情况|被研究现象|<br>
+|:-:|:-:|:-:|:-:|<br>
+|(1)|A、B、C|a|<br>
+|(2)|A、D、E|a|<br>
+|(3)|A、F、G|a|<br>
+|┅|┅┅┅┅|┅|<br>
+所以， A是a的原因</p>
+<h4>求异法</h4>
+<p>被研究现象只在某场合出现，在另一场合并不出现，而两个场合中只有一个不同因素，这个唯一不同的因素就是被研究现象产生的原因(或结果)。<br>
+公式：</p>
+<p>|场合|先行或后行情况|被研究现象|<br>
+|:-:|:-:|:-:|:-:|<br>
+|(1)|A、B、C、D|a、b、c、d|<br>
+|(2)|--、B、C、D|--、b、c、d|<br>
+所以，A是a的原因</p>
+<h4>求同求异法</h4>
+<p>考察两组事例，一组是有被考察现象出现的场合，另一组是没有被考察现象出现的场合。在正事例组中只有一个情况是共同的，而这个情况在反事例组中恰好都不出现，那么这一情况就是被研究现象的原因。<br>
+这种方法共有三个步骤∶<br>
+第一步，对正面场合进行求同，找出一个共同的情况A。初步可确定A是a的原因。<br>
+第二步，对反面场合进行求同，发现都没有情况A。可确定非A是非a的原因。<br>
+第三步，把前两步求同的结果加以对照，通过求异法进一步确认A与a之间存在着因果联系。</p>
+<p>|场合|先行或后行情况|被研究现象|<br>
+|:-:|:-:|:-:|:-:|<br>
+|(1)|A、B、C、F|a、bcf|<br>
+|(2)|A、D、E、G|a、deg|<br>
+|(3)|A、F、G、C|a、fgc|<br>
+|(正事例组)|┅┅┅┅┅┅|┅|┅|<br>
+|(1)|--、B、C、G|-- 、bcg|<br>
+|(2)|--、D、E、G|-- 、deg|<br>
+|(3)|--、F、G、D|-- 、fgd|<br>
+|(反事例组)|┅┅┅┅┅┅|┅|┅|<br>
+所以，A是a的原因</p>
+<h4>共变法</h4>
+<p>其它因素都不变的条件下，如果一个因素发生变化，另一被因素也随之发生变化，那么，前者就是后者的原因</p>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th align="center">场合</th>
+<th align="center">先行或后行情况</th>
+<th align="center">被研究现象</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">(1)</td>
+<td align="center">A1、B、C、D</td>
+<td align="center">a1</td>
+</tr>
+<tr>
+<td align="center">(2)</td>
+<td align="center">A2、B、C、D</td>
+<td align="center">a2</td>
+</tr>
+<tr>
+<td align="center">(3)</td>
+<td align="center">A3、B、C、D</td>
+<td align="center">a3</td>
+</tr>
+<tr>
+<td align="center">┅</td>
+<td align="center">┅┅┅┅┅</td>
+<td align="center">┅┅</td>
+</tr>
+<tr>
+<td align="center">所以， A是a的原因</td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<h4>剩余法</h4>
+<p>在复合现象由复合原因引起时，把其中能够确认为因果关联的部分去除掉，则剩余的部分也存在着因果关系。<br>
+公式∶<br>
+ABCD——abcd；<br>
+A——a；<br>
+B——b；<br>
+C——c；<br>
+所以，D是d的原因</p>
+<h2>类比推理</h2>
+<p>=根据两个或两类事物在某些属性上相同，从而推出它们的另一些属性也相同的推理过程<br>
+公式：<br>
+A——a、b、c、d<br>
+B——a、b、c<br>
+所以B——d<br>
+类比推理的前提与结论之间没有必然性联系</p>
+<h1>规律</h1>
+<p>指在各种思维形式中普遍起作用的逻辑规则<br>
+体现了逻辑思维的一般特点，即逻辑思维的确定性、无矛盾性和明确性</p>
+<h2>同一律</h2>
+<p>就是在同一思维过程中，必须在同一意义上使用概念和判断，不能混淆不相同的概念和判断。<br>
+同一律强调思维过程的确定性，任何思想是真的就是真的，是假的就是假的。<br>
+公式：“A→A”<br>
+逻辑含义是：A就是A/或如果A，那么A<br>
+违反同一律所犯的逻辑错误是“偷换概念”或“转移论题”</p>
+<h2>矛盾律（=不矛盾律）</h2>
+<p>在同一思维过程中，两个相互背反的思想不能同时都是真的。<br>
+矛盾律强调强调思维过程的无矛盾性<br>
+矛盾律的逻辑含义：A不是非A<br>
+违反矛盾律所犯的逻辑错误是“自相矛盾”。</p>
+<h2>排中律</h2>
+<p>在同一思维过程中，两个互相矛盾或下反对的思想不能同假，必有一真<br>
+排中律强调思维过程的明确性.<br>
+公式是：或者A或者非A；A∨﹁ A<br>
+违反排中律所犯的逻辑错误是“模棱两可”<br>
+矛盾律与排中律的区别：矛盾律适用于矛盾关系与上反对关系，排中律适用于矛盾关系与下反对关系<br>
+注意：</p>
+<ol>
+<li>排中律只在传统的二值逻辑中是有效的。在多值逻辑中，一个命题除了真、假二值外，还允许真假不定等其他情形存在</li>
+<li>在概念方面：排中律要求对任一对象，或者用A这一概念去反映它，或者用非A这一概念去反映它</li>
+<li>在命题方面：排中律要求在同一思维过程中，对具有矛盾关系的命题不应该都否定，而必须肯定其中一个是真的</li>
+<li>当我们面对两个互相矛盾的思想的时候，根据排中律即可断定二者必有一真</li>
+</ol>
+<h1>论证</h1>
+<p>是用已知为真的判断确定某一判断的真实性或虚假性的思维过程<br>
+形式=证明、反驳<br>
+结构：</p>
+<ol>
+<li>论题=论题是论证中其真实性或虚假性需要确定的判断，是论证的主题和核心</li>
+<li>论据=用来确定论题的真实性或虚假性的已知为真的判断。论据是一个论证的根据。也就是所谓的“理由”，包括事实情况和科学中的定义、公理、定理</li>
+<li>论证方式=论证中使用的推理方式<br>
+异同：</li>
+<li>论证和推理是人的不同思维过程的反映</li>
+<li>从认识过程上看，推理是从前提出发，按照推理规则推出结论；而论证则是先有论题，然后再引用论据（即已知为真的判断）对论题加以证实</li>
+<li>从逻辑结构上看，论证的结构比推理一般要复杂得多，往往需要若干个推理结合在一起使用，才能证实论题</li>
+<li>从思维的目的上看，推理是根据一个或几个判断得出新的判断；而论证则是由一个或几个判断的真实性，进而断定另一个判断（论题）的真实性</li>
+</ol>
+<h2>证明的方法</h2>
+<p>据证明所用的推理形式的不同</p>
+<ul>
+<li>演绎证明=用演绎推理的形式，根据一般性原理论证某一特殊性论断</li>
+<li>归纳证明=用归纳推理的形式，根据个别性或特殊性论断论证一般性原理</li>
+<li>类比证明<br>
+根据论证的方法不同</li>
+<li>直接证明</li>
+<li>间接证明</li>
+</ul>
+<h3>反证法</h3>
+<p>通过确定与论题相矛盾的判断即反论题的虚假，从而确定论题的真实性的间接证明<br>
+设非P真<br>
+非P→Q<br>
+已知Q假<br>
+所以非P假<br>
+（根据排中律）<br>
+所以P真<br>
+(充分条件假言推理否定后讲式的具体运用)</p>
+<h3>排除法（选言证法）</h3>
+<h2>反驳的方法</h2>
+<p>根据反驳的方法不同</p>
+<ul>
+<li>直接反驳=根据一个或一些判断的真实性，直接推出对方判断的虚假性的反驳方法</li>
+<li>间接反驳=先论证与被反驳的论题相矛盾或相反对的论断真，然后根据矛盾律确定被反驳的论题假</li>
+</ul>
+<h3>独立证明</h3>
+<p>通过确定与被反驳的论题相否定的观点的真实性，依据矛盾律，进而确定被反驳论题的虚假性的反驳方法<br>
+非P真<br>
+依据矛盾律<br>
+所以，P假</p>
+<h3>归谬法</h3>
+<p>是通过假定被反驳论题为真，然后据此必然推出荒谬的结果，从而确定被反驳的论题为假的反驳方法<br>
+结构：<br>
+设P为真<br>
+P→Q<br>
+已知Q假<br>
+（根据充分条件假言推理规则）<br>
+所以P假</p>
+<h2>关于论题的规则</h2>
+<ol>
+<li>论题必须明确，否则为“论题不明确”�。违反这条规则，就要犯“论题不明”的逻辑错误</li>
+<li>论题必须保持同一，否则为“转移论题” 。违反这条规则，在写作上叫做“跑题”，在逻辑论证中，叫做“偷换论题”或“混淆论题”。</li>
+</ol>
+<h2>关于论据的规则</h2>
+<ol>
+<li>论据必须真实，否则为“虚假理由”</li>
+<li>论据的真实性不能靠论题来证明，否则为“循环论证”</li>
+</ol>
+<h2>关于论证方式的规则</h2>
+<ol>
+<li>从论据应当能推出论题，否则为“推不出”，包括：“论据与论题不相干”；“论据不足”；“以人为据”；“诉诸无知”；“以相对为绝对”</li>
+</ol>
+<ul>
+<li>观念：认识、情感、态度的集合，是人脑对感性事物的完善的样本或模型化的结果。</li>
+</ul>
+<h1>研究问题</h1>
+<ul>
+<li>概念：指的是一项研究所要回答的具体问题。需要通过理论（逻辑）演绎或实证验证来进行回答。</li>
+<li>研究问题的选择决定了研究成果的上限。回答一个不是特别重要的问题，即使回答得很好也难以获得普遍的认可。</li>
+</ul>
+<h2>研究议题（research topic）</h2>
+<ul>
+<li>是在研究过程中所关注的更为具体的一类议题、对象和社会事实</li>
+<li>比研究问题宽泛，比研究领域具体</li>
+</ul>
+<h3>研究议题的类别</h3>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>研究目的</th>
+<th>方法研究</th>
+<th>理论研究</th>
+<th>实证研究</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>描述</td>
+<td>教学</td>
+<td>文献评论</td>
+<td>实证描述</td>
+</tr>
+<tr>
+<td>解释</td>
+<td>方法论发展</td>
+<td>理论构建</td>
+<td>实证解释</td>
+</tr>
+<tr>
+<td>预测</td>
+<td>？</td>
+<td>？</td>
+<td>？</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<p>描述：着重展示研究对象的特征<br>
+解释：偏重于展示研究对象特征背后的原因<br>
+预测：解释本身就有一定预测功能，且合理的预测背后都存在一定的解释。王凯将预测式研究归到解释性研究中</p>
+<h2>研究对象</h2>
+<ul>
+<li>研究对象是实证本身＋描述性研究目的
+<ul>
+<li>实证研究对象指的是通过观察、疾苦、测量或实验获取的，能够反映现实世界现象的社会事实</li>
+<li>这类研究问题旨在详细描述一个社会事实的特征和发展轨迹，但是暂不追求对后者的解释</li>
+<li>由于缺乏解释，此类研究的价值往往在于描述清楚一个未被熟知的、重要的甚至被误解的社会事实，从而贡献新的知识增量</li>
+<li>有时，重要的问题不是去解释“为什么”，因为原因是显而易见的，重要的是精确的描述之后的行动和政策应对</li>
+</ul>
+</li>
+<li>理论解释＋实证验证式研究
+<ul>
+<li>存在两个重要部分：依赖逻辑演绎而得到的纯理论建构＋先择并执行合适的实证研究方法对理论进行验证</li>
+</ul>
+</li>
+</ul>
+<h1>概念</h1>
+<h2>概念的定义</h2>
+<ul>
+<li>认知的视角</li>
+</ul>
+<blockquote>
+<p>一个基本的思维单位，只有当我们知道什么不是A时，我们才有了一个关于A的概念－－萨托利</p>
+</blockquote>
+<h2>概念包含的要素</h2>
+<ul>
+<li>
+<p>术语本身</p>
+</li>
+<li>
+<p>内涵（intention）：对事物特有属性的定义</p>
+</li>
+<li>
+<p>外延（extention）：在这种定义下所包含的具体事物类别</p>
+</li>
+<li>
+<p>对立面：明确概念不包含的内容</p>
+</li>
+<li>
+<p>测量：概念的操作化过程<br>
+民主的概念：三种定义和测量的方式<br>
+充分必要条件：<br>
+代表人物：萨托利<br>
+竞争性的选举（李普赛特）<br>
+测量：0或1<br>
+家族相似或可叠加<br>
+维特根斯坦<br>
+polity指数：十项指标，加权为-10到10<br>
+福利国家：劳动／教育／医疗／养老<br>
+测量过程中没有一种要素是不可缺少的<br>
+辐射概念<br>
+Collier＆Mahoney<br>
+包含一个具备若干核心内涵（政治参与、权力制衡和公正＝INUS）的经典原型（prototype）<br>
+测量：不同类别的民主（参与型、自由型、大众型、社会主义）</p>
+<p>抽象之梯（ladder of generality）</p>
+<ul>
+<li>越往上：内涵越少，外延越多，涵盖案例越多</li>
+<li>越往下：内涵越多，外延越少，涵盖案例越少</li>
+</ul>
+</li>
+</ul>
+<h2>概念的延伸（conceptual stretching）</h2>
+<p>民主</p>
+<ul>
+<li>威权主义民主</li>
+<li>父权制民主</li>
+<li>军政府民主<br>
+好的概念→可以帮助测量的概念</li>
+</ul>
+<h2>概念的测量</h2>
+<ul>
+<li>完整而准确地衡量了概念中的核心内涵要素（效度）</li>
+<li>可行性</li>
+</ul>
+<h3>测量的几种模式</h3>
+<ul>
+<li>
+<p>直接测量本身</p>
+</li>
+<li>
+<p>依据原因测量</p>
+</li>
+<li>
+<p>依据结果测量</p>
+</li>
+<li>
+<p>依据相关关系来测量</p>
+</li>
+<li>
+<p>混合测量</p>
+<p>Kertzer, 2017：用决心的原因而非结果来进行测量</p>
+</li>
+</ul>
+<h1>理论</h1>
+<h2>理论的定义</h2>
+<p>只关于实证（empirical）或者社会事实（social fact）的理论。它是由一系列假设、命题、陈述等组成的逻辑系统，旨在探索社会事实背后的规律。</p>
+<h2>判断理论的标准</h2>
+<ol>
+<li>主要在于其是否能够帮助我们理解社会事实，能够帮助我们理解多少社会事实。与能够理解的社会事实的量呈现正相关</li>
+<li>逻辑上是否一致</li>
+<li>简洁性</li>
+<li>是否有明确的适用范围（scope）</li>
+</ol>
+<h2>理论的分类（王凯）</h2>
+<ul>
+<li>[理论]真包含[因果关系（causation）]</li>
+<li>[因果关系]真包含[因果机制（causal mechanism）]<br>
+理论包含了关于因果关系的理论（冲击－回应理论）和概念的理论（王国维的三重境界）</li>
+</ul>
+<blockquote>
+<p>王凯《社会科学研究方法论》p.15图</p>
+</blockquote>
+<ul>
+<li>因果关系是指一个因素（原因）的变化导致另一个因素（结果）变化的现象。</li>
+<li>因果关系几乎是所有科学研究领域的核心追求。但<strong>现代科学还想了解这种变化是任何通过因果机制具体产生的</strong></li>
+</ul>
+<h3>因果机制</h3>
+<p>关注点不在“什么原因会产生什么结果”，在在于其运作方式（how it works）＝原因影响结果的一系列过程。</p>
+<ul>
+<li>在这一过程中，机制一方面传递了原因对结果的影响，另一方面原因的出现又启动了机制的运转<br>
+如：<br>
+因果关系：温度升高，液体会蒸发<br>
+因果机制：分子运动<br>
+因果关系：葡萄用酵母菌，会变成葡萄酒<br>
+因果机制：发酵机制<br>
+因果关系：地球会围绕太阳公转<br>
+因果机制：引力机制<br>
+因果关系：市场经济的资源配置更好<br>
+因果机制：供求机制等</li>
+<li>科学想要探寻：原因如何一步步导致了结果的发生，从而打开因果关系的黑箱。</li>
+</ul>
+<h2>关于概念的理论</h2>
+<p>非因果的理论</p>
+<ul>
+<li>马克思韦伯的国家类型</li>
+<li>马克思的国家理论</li>
+</ul>
+<h1>相关关系（correlation）</h1>
+<p>指的是一个因素与另一个因素之间存在某种共同变化的模式</p>
+<ul>
+<li>来自研究者对实证材料的归纳和分析</li>
+<li>不涉及何为因何为果的因果判断</li>
+<li>是一个基于实证而非理论的概念（王凯）</li>
+</ul>
+<h2>相关关系的价值</h2>
+<blockquote>
+<p>Correlation doesn't imply causation.</p>
+</blockquote>
+<ul>
+<li>机器学习算法使得相关关系而非因果关系成为了应用大数据的重要趋势
+<ul>
+<li>变量太多<br>
+重视相关关系</li>
+</ul>
+</li>
+</ul>
+<h1>文献评价（参考书上内容，只记录要点）</h1>
+<h1>案例研究</h1>
+<h1>实地研究</h1>
+<h2>实地研究的作用</h2>
+<ul>
+<li>有利于提出主题而非结构性的解释
+<ul>
+<li>IR neorealism VS IR neoclassical realism</li>
+</ul>
+</li>
+<li>对观念的因素、文化、认同感</li>
+</ul>
+<h3>访谈</h3>
+<ul>
+<li>什么是（如何做）社会科学中的访谈
+<ul>
+<li>针对研究问题中所包含的重要行为体</li>
+<li>有计划的设计访谈问题的机构</li>
+<li>...</li>
+</ul>
+</li>
+</ul>
+<h4>访谈的类型</h4>
+<ul>
+<li>访谈对象
+<ul>
+<li>个人访谈</li>
+<li>焦点访谈（the focused interview）：通过集体互动收集信息</li>
+</ul>
+</li>
+<li>访谈的方式
+<ul>
+<li>闭合式/结构式</li>
+<li>半结构式</li>
+<li>开放式</li>
+<li>结合问卷</li>
+</ul>
+</li>
+</ul>
+<h4>访谈在社会科学中的作用是什么，适合什么情景</h4>
+<ul>
+<li>了解事件的发展和行为体的经历和感受</li>
+<li></li>
+</ul></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://shauson.github.io">Blog Title</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if(""!=""){
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","shauson/shauson.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+
+
+</script>
+<script>document.addEventListener('DOMContentLoaded',function(){const article=document.querySelector('.markdown-body');if(!article)return;function wrapLatin(node){if(node.nodeType===Node.TEXT_NODE){const regex=/[A-Za-z0-9%$#@&*\-_=+<>\/.,;:!?()\[\]]+/g;if(regex.test(node.textContent)){const parent=node.parentNode;const frag=document.createDocumentFragment();let lastIndex=0;node.textContent.replace(regex,function(match,offset){if(offset>lastIndex){frag.appendChild(document.createTextNode(node.textContent.slice(lastIndex,offset)));}const span=document.createElement('span');span.className='latin';span.textContent=match;span.style.display='inline-block';span.style.transform='rotate(90deg)';span.style.transformOrigin='left top';frag.appendChild(span);lastIndex=offset+match.length;});if(lastIndex<node.textContent.length){frag.appendChild(document.createTextNode(node.textContent.slice(lastIndex)));}parent.replaceChild(frag,node);}}else if(node.nodeType===Node.ELEMENT_NODE&&node.tagName!=='CODE'&&node.tagName!=='PRE'&&node.tagName!=='IMG'&&node.tagName!=='TABLE'){Array.from(node.childNodes).forEach(wrapLatin);}}wrapLatin(article);});</script>
+
+</html>

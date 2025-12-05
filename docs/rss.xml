@@ -1,2 +1,24 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://shauson.github.io</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://shauson.github.io</link></image><lastBuildDate>Fri, 05 Dec 2025 09:09:23 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>放到沙发上士大夫</title><link>https://shauson.github.io/post/fang-dao-sha-fa-shang-shi-da-fu.html</link><description>d'fa'fa都发发是发发生。</description><guid isPermaLink="true">https://shauson.github.io/post/fang-dao-sha-fa-shang-shi-da-fu.html</guid><pubDate>Fri, 05 Dec 2025 08:56:36 +0000</pubDate></item><item><title>就发萨法就阿松i发就发</title><link>https://shauson.github.io/post/jiu-fa-sa-fa-jiu-a-song-i-fa-jiu-fa.html</link><description>&lt;p&gt;1&lt;/p&gt;。</description><guid isPermaLink="true">https://shauson.github.io/post/jiu-fa-sa-fa-jiu-a-song-i-fa-jiu-fa.html</guid><pubDate>Fri, 05 Dec 2025 08:52:54 +0000</pubDate></item></channel></rss>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://shauson.github.io</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://shauson.github.io</link></image><lastBuildDate>Fri, 05 Dec 2025 11:03:37 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>形式逻辑</title><link>https://shauson.github.io/post/xing-shi-luo-ji.html</link><description>---
+headingDivider: '2'
+---
+&gt; 逻辑学  
+&gt; 形式逻辑  
+&gt;&gt; 传统形式逻辑  
+&gt;&gt;&gt; 演绎  
+&gt;&gt;&gt; 归纳  
+&gt;&gt; 现代形式逻辑  
+&gt;&gt;&gt; 数理逻辑  
+&gt;&gt;&gt; 人工逻辑  
+&gt; 辩证逻辑  
+  
+# 逻辑学的研究对象＝理性思维  
+形式逻辑的研究对象＝思维形式及其规律，同时也涉及一些简单的逻辑方法  
+## 思维形式：思维内容的组成和表达方式（＝概念、判断、推理）  
+### 思维形式类型  
+1. 所有的S是P（性质判断）＝所有的日本国民都是日本义务教育的对象  
+2. aRb（关系判断）＝芥川龙之介来过中国  
+3. 如果p，那么q（复合判断＝假言判断＋连言判断＋选言判断）  
+### 思维形式的构成：逻辑常项、逻辑变项  
+1. 逻辑常项＝“所有的，是”“R”“如果，那么”  
+    R的处理：在性质判断中，”S“是主项，P是”谓项“，因此常项很好处理。</description><guid isPermaLink="true">https://shauson.github.io/post/xing-shi-luo-ji.html</guid><pubDate>Fri, 05 Dec 2025 08:56:36 +0000</pubDate></item><item><title>就发萨法就阿松i发就发</title><link>https://shauson.github.io/post/jiu-fa-sa-fa-jiu-a-song-i-fa-jiu-fa.html</link><description>&lt;p&gt;1&lt;/p&gt;。</description><guid isPermaLink="true">https://shauson.github.io/post/jiu-fa-sa-fa-jiu-a-song-i-fa-jiu-fa.html</guid><pubDate>Fri, 05 Dec 2025 08:52:54 +0000</pubDate></item></channel></rss>
