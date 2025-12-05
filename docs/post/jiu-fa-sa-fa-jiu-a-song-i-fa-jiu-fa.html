@@ -43,7 +43,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 }
 
 </style>
-<style>@font-face{font-family:'WQYRotateCJK';src:url('https://raw.githubusercontent.com/garywill/vert-cjk-web/master/wqy-microhei-rotate90cjk.ttf') format('truetype');}#vertwrap{position:fixed;top:0;left:0;overflow:hidden;width:100vw;height:100vh;z-index:9999;pointer-events:none;display:none;}#vertwrap iframe{border:none;transform:rotate(90deg);transform-origin:top left;width:calc(100vh);height:calc(100vw);position:absolute;top:0;left:calc(100vw);font-family:'WQYRotateCJK','SimSun',serif;}</style>
+<style>#vertwrap{position:fixed;top:0;left:0;overflow:hidden;width:100vw;height:100vh;z-index:9999;pointer-events:none;display:none;}#vertwrap iframe{border:none;transform:rotate(90deg);transform-origin:top left;width:calc(100vh);height:calc(100vw);position:absolute;top:0;left:calc(100vw);}</style>
 
 
 
@@ -174,6 +174,6 @@ function iFrameLoading(){
 
 
 </script>
-<script>(function(){document.addEventListener('DOMContentLoaded',function(){var btn=document.createElement('button');btn.textContent='竖排模式';btn.style='position:fixed;top:10px;right:10px;z-index:10000;padding:6px 12px;background:#333;color:#fff;border:none;border-radius:4px;cursor:pointer;';document.body.appendChild(btn);var wrap=document.createElement('div');wrap.id='vertwrap';var ifr=document.createElement('iframe');ifr.src=location.href;wrap.appendChild(ifr);document.body.appendChild(wrap);btn.onclick=function(){wrap.style.display=wrap.style.display==='none'?'block':'none';wrap.scrollTo(0,0);};});})();</script>
+<script>(function(){document.addEventListener('DOMContentLoaded',function(){var btn=document.createElement('button');btn.textContent='竖排模式';btn.style='position:fixed;top:10px;right:10px;z-index:10000;padding:6px 12px;background:#333;color:#fff;border:none;border-radius:4px;cursor:pointer;';document.body.appendChild(btn);var wrap=document.createElement('div');wrap.id='vertwrap';var ifr=document.createElement('iframe');ifr.src=location.href;wrap.appendChild(ifr);document.body.appendChild(wrap);ifr.onload=function(){var s=document.createElement('style');s.textContent="@font-face{font-family:'WQYRotateCJK';src:url('https://raw.githubusercontent.com/garywill/vert-cjk-web/master/wqy-microhei-rotate90cjk.ttf') format('truetype');}body{font-family:'WQYRotateCJK','SimSun',serif;}";ifr.contentDocument.head.appendChild(s);};btn.onclick=function(){wrap.style.display=wrap.style.display==='none'?'block':'none';wrap.scrollTo(0,0);};});})();</script>
 
 </html>
